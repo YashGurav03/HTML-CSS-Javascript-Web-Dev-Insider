@@ -1,0 +1,110 @@
+#w1{
+    font-size: larger;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+#w1 b{
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+}
+#w1 p{
+    font-size: larger;
+}
+.w4{
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+.w4 pre{
+    text-align: center;
+    font-size: larger;
+}
+.w4 p{
+    color: white;
+    text-align: center;
+}
+h1{
+    background-color: pink;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid darkorchid;
+    border-radius: 10px;
+}
+p{
+    font-size: larger;
+    margin: 10px;
+    padding: 10px;
+}
+h2{
+    background-color: pink;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    font-size: 25px;
+    border: 3px solid darkorchid;
+    border-radius: 10px;
+}
+p{
+    font-size: larger;
+    margin: 10px;
+}
+b{
+    background-color: lightblue;
+    margin: 10px;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid blue;
+}
+img{
+   margin: 10px;
+   border-radius: 10px;
+   padding: 10px;
+}
+ul{
+    font-size: larger;
+    margin: 10px;
+}
+li{
+    font-size: larger;
+    margin: 10px;
+}
+pre{
+    margin: 10px;
+    font-size: larger;
+}
+.code1{
+    background-color: lightblue;
+    margin: 10px;
+    font-size: larger;
+    border: 3px solid rgb(87, 87, 222);
+    color: blue; 
+    padding: 10px;
+    border-radius: 10px;
+}
+.samp1{
+    margin: 10px;
+    padding: 10px;
+    font-size: larger;
+    border: 3px solid black;
+    background-color: darkblue;
+    color: yellow;  
+    border-radius: 10px;
+}
+ol{
+    margin: 10px;
+    padding: 10px;
+    font-size: larger;
+    
+}
+ins{
+    margin: 10px;
+    padding: 10px;
+    font-size: larger;
+}

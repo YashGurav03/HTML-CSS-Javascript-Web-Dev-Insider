@@ -1,0 +1,54 @@
+#w1{
+    font-size: larger;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 20px;
+}
+#w1 b{
+    color: black;
+    font-size: 25px;
+}
+#w1 p{
+    font-size: larger;
+}
+.w4{
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+.w4 pre{
+    text-align: center;
+    font-size: larger;
+}
+.w4 p{
+    color: white;
+    text-align: center;
+}
+h1{
+    background-color: pink;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid darkorchid;
+}
+p{
+    font-size: larger;
+}
+h2{
+    background-color: pink;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+img{
+    margin: 10px;
+}
+b{
+    margin: 10px;
+    font-size: larger;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid blue;
+}

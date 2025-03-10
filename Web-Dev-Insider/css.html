@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/css.css">
+    <link rel="icon" type="image/x-icon" href="./IMAGE/WebDev logo.png">
+</head>
+<body style="background-color: aliceblue;">
+    <pre id="w1"><b>Web Tutorial</b>               <a href="./web terminology.html">Web Terminology</a>      <a href="./htmldata.html" target="_blank">HTML</a>       <a href="./css.html">CSS</a>       <a href="./javascript.html">Javascript</a>       <a href="./jquery.html">JQuery</a>        <a href="./reactjs.html">ReactJS</a>         <a href="./bootstrap.html">Bootstrap</a>        <a href="./interview question.html">Interview Questions</a>          </pre>
+    <h1>CSS [Cascading Style Sheet]</h1>
+    <center><img src="./IMAGE/css2.png" height="300" width="700px" ></center>
+    <hr>
+    <p>Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+
+        CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility;[further explanation needed] provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+        
+        Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]
+        
+        The name cascading comes from the specified priority scheme to determine which declaration applies if more than one declaration of a property match a particular element. This cascading priority scheme is predictable.
+        
+        The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.[5]
+        
+        In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL. CSS is also used in the GTK widget toolkit.</p>
+    <hr>
+    <h2>What is CSS ?</h2>
+     <pre>
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files 
+    </pre>
+
+    <h2>Types of CSS</h2>
+    <img src="./IMAGE/Typesofcss.png" height="350px" width="700px">
+    <p>CSS can be added to HTML documents in 3 ways:</p>
+    <ul>
+        <li><ins>Inline</ins> - by using the style attribute inside HTML elements</li>
+        <li><ins>Internal</ins> - by using a style element in the head section</li>    
+        <li><ins>External</ins> - by using a link element to link to an external CSS file</li>   
+    </ul>
+    <b>Inline CSS</b>
+    <p>An inline CSS is used to apply a unique style to a single HTML element.
+
+        An inline CSS uses the style attribute of an HTML element.</p>
+    <b>Internal CSS</b>
+    <p>An internal CSS is used to define a style for a single HTML page.
+
+        An internal CSS is defined in the head section of an HTML page, within a style element.</p>
+    <b>External CSS</b>    
+    <p>An external style sheet is used to define the style for many HTML pages.
+
+        To use an external style sheet, add a link to it in the head section of each HTML page. The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.</p>
+     <h2>CSS Syntax</h2>
+     <img src="./IMAGE/syntax.png" height="180px" width="450px">  
+     <p>A CSS rule consists of a selector and a declaration block.The selector points to the HTML element you want to style.
+
+        The declaration block contains one or more declarations separated by semicolons.
+        
+        Each declaration includes a CSS property name and a value, separated by a colon.
+        
+        Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+    <h2>Types of CSS Selector</h2>
+    <img src="./IMAGE/selectors.png" height="350px" width="600px">    
+    <p>We can divide CSS selectors into five categories:</p>
+    <ul>
+        <li><ins>Simple selectors</ins> (select elements based on name, id, class)</li>
+        <li><ins>Combinator selectors</ins> (select elements based on a specific relationship between them)</li>    
+        <li> <ins>Pseudo-class selectors</ins> (select elements based on a certain state)</li>   
+        <li><ins>pseudo-elements selectors </ins>(select and style a part of an element)</li>    
+        <li> <ins>Attribute selectors</ins> (select elements based on an attribute or attribute value)</li>   
+    </ul> 
+    <br>
+    <b>The CSS element Selector</b>
+    <p>The element selector selects HTML elements based on the element name.</p>
+    <b>The CSS id Selector</b>
+    <p>The id selector uses the id attribute of an HTML element to select a specific element.
+
+        The id of an element is unique within a page, so the id selector is used to select one unique element!
+        
+        To select an element with a specific id, write a hash (#) character, followed by the id of the element.<br><ins>Note: An id name cannot start with a number!</ins></p>
+     <b>The CSS class Selector</b>
+     <p>The class selector selects HTML elements with a specific class attribute.
+
+        To select elements with a specific class, write a period (.) character, followed by the class name.You can also specify that only specific HTML elements should be affected by a class.
+        HTML elements can also refer to more than one class.<br><ins>Note: A class name cannot start with a number!</ins></p>
+     <b>The CSS Universal Selector</b>
+     <p>The universal selector (*) selects all HTML elements on the page.</p>
+     <b>The CSS Grouping Selector</b>
+     <p>The grouping selector selects all the HTML elements with the same style definitions.It will be better to group the selectors, to minimize the code.
+
+        To group selectors, separate each selector with a comma.</p>  
+     <h2>CSS Combinator Selectors</h2>
+     <img src="./IMAGE/combinator.png" height="250px" width="350px"> 
+     <p>There are four different combinators in CSS:</p>
+     <ul>
+        <li>Descendant selector (space)</li>
+        <li>Child selector (>)</li>    
+        <li>Adjacent sibling selector (+)</li>    
+        <li>General sibling selector (~)</li>    
+     </ul>   
+     <b>Descendant Selector</b>
+     <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+     <b>Child Selector (>)</b>
+     <p>The child selector selects all elements that are the children of a specified element.</p>
+     <b>Adjacent Sibling Selector (+)</b>
+     <p>The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+        Sibling elements must have the same parent element, and "adjacent" means "immediately following". </p>
+    <b>General Sibling Selector (~)</b>
+    <p>The general sibling selector selects all elements that are next siblings of a specified element.</p>
+    <h2>CSS Comments</h2>
+    <img src="./IMAGE/comment1.png" height="250px" width="450px">
+    <p>Comments are used to explain the code, and may help when you edit the source code at a later date.
+
+        Comments are ignored by browsers.
+        
+        A CSS comment is placed inside the style element, and starts with /* and ends with */. You can add comments wherever you want in the code.Even in the middle of a code line.Comments can also span multiple lines.s</p>
+    <h2>CSS Colors</h2>
+    <p>Comments can also span multiple lines</p>
+    <b>CSS Color Names</b>
+    <p>In CSS, a color can be specified by using a predefined color name</p>
+    <b>CSS Background Color</b>
+    <p>You can set the background color for HTML elements</p>
+    <b>CSS Text Color</b>
+    <P>You can set the color of text</P>
+    <b>CSS Border Color</b>
+    <p> can set the color of borders></p> 
+    <b>CSS Color Values</b>
+    <p> CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values</p>   
+    <h2>CSS RGB Colors</h2>
+    <img src="./IMAGE/rgb.png" height="250px" width="400px">
+    <p>An RGB color value represents RED, GREEN, and BLUE light sources.</p>
+    <b>RGB Value</b>
+    <p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.<br>
+
+        For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.<br>
+        
+        To display black, set all color parameters to 0, like this: rgb(0, 0, 0).<br>
+        
+        To display white, set all color parameters to 255, like this: rgb(255, 255, 255).</p>
+    <h2>CSS HEX Colors</h2>
+    <img src="./IMAGE/hex.png" height="250px" width="400px">
+    <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.</p>
+    <b>HEX Value</b>  
+    <p>n CSS, a color can be specified using a hexadecimal value in the form:<br>
+
+       <ins> #rrggbb</ins><br>
+        
+        Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).<br>
+        
+        For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).<br>
+        
+        To display black, set all values to 00, like this: #000000.<br>
+        
+        To display white, set all values to ff, like this: #ffffff.  </p>  
+    <h2>CSS HSL Colors</h2>
+    <p>HSL stands for hue, saturation, and lightness</p>
+    <b>HSL Value</b>
+    <p>In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:<br>
+
+        <ins>hsl(hue, saturation, lightness)</ins><br>
+        
+        Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.<br>
+        
+        Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.<br>
+        
+        Lightness is also a percentage. 0% is black, 50% is neither light or dark, 100% is white</p> 
+    <h2>CSS Units</h2>
+    <img src="./IMAGE/units.png" height="500px" width="500px">
+    <p>CSS has several different units for expressing a length.
+
+        Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.
+        
+        Length is a number followed by a length unit, such as 10px, 2em, etc.<br>
+        There are two types of length units: <ins>absolute and relative</ins></p> 
+     <b>Absolute Lengths</b>
+     <p>The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
+
+        Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.</p>
+      <ol>
+        <li><ins>cm</ins>	centimeters</li>
+        <li><ins> mm</ins> millimeters</li>   	
+        <li><ins>in</ins> inches (1in = 96px = 2.54cm)</li>    	
+        <li><ins> px *</ins> pixels (1px = 1/96th of 1in)</li>   	
+        <li><ins>pt</ins> points (1pt = 1/72 of 1in)</li>   	
+        <li><ins>pc</ins> picas (1pc = 12 pt)</li>   
+      </ol>        
+      <ins>* Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel (dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.</ins>
+      <h2>Relative Lengths</h2>
+      <p>Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium.</p>
+      <ol>
+        <li><ins>em</ins> Relative to the font-size of the element (2em means 2 times the size of the current font)	</li>
+        <li><ins> ex</ins> Relative to the x-height of the current font (rarely used)	</li>
+        <li><ins> ch</ins> Relative to the width of the "0" (zero)</li>   		
+        <li><ins>rem</ins> Relative to font-size of the root element</li>    		
+        <li><ins> vw</ins> Relative to 1% of the width of the viewport*	</li>
+        <li><ins>vh</ins> Relative to 1% of the height of the viewport*</li>    	
+        <li><ins> vmin</ins> Relative to 1% of viewport's* smaller dimension</li>   		
+        <li><ins>vmax</ins> Relative to 1% of viewport's* larger dimension</li>    		
+        <li><ins> %</ins> Relative to the parent element</li>   	
+      </ol>
+      <ins>The em and rem units are practical in creating perfectly scalable layout!
+        * Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.</ins>
+    <h2>CSS background-image</h2>
+    <img src="./IMAGE/background image.png" height="400px" width="650px">
+    <p>The background-image property sets one or more background images for an element.
+        By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.</p>
+    <p><ins>Tip:</ins> The background of an element is the total size of the element, including padding and border (but not the margin).
+       <br>
+        <ins>Tip:</ins> Always set a background-color to be used if the image is unavailable.</p>
+        <p>Here are the individual properties that can be combined in the shorthand:</p>
+        <li><b>background-color:</b>Sets the background color.</li><br><br>
+        <li><b>background-image:</b>Sets the background image.</li><br><br>
+        <li><b>background-position:</b>Defines the initial position of the background image.</li><br><br>
+        <li><b>background-size:</b>Specifies the size of the background image.</li><br><br>
+        <li><b>background-repeat</b>Controls if/how the background image repeats.</li><br><br>
+        <li><b>background-attachment:</b>Determines whether the background image scrolls with the page or remains fixed.</li><br><br>
+        <li><b>background-origin:</b>Specifies the positioning area of the background.</li><br><br>
+        <li><b>background-clip:</b>Determines the painting area of the background.</li><br><br>
+        <li><b>opacity property</b>In CSS, opacity and transparency are used to control the visibility and transparency of an element and its contents.<br><br>
+        <p> 0: Fully transparent (invisible).<br>
+            1: Fully opaque (default, no transparency).</p>
+    <h2>Backgroung-Blend-Mode</h2>
+    <img src="./IMAGE/blend-mode.png" height="350px" width="500px">
+    <p>The background-blend-mode property in CSS is used to define how the background images and background colors blend with each other. This property is particularly useful when you have multiple background layers (color, image, gradient, etc.) and you want to control how they visually mix together.</p>
+    <li><b>normal:</b>Default; no blending is applied</li><br><br>
+    <li><b>multiply:</b>Multiplies the background layers, resulting in a darker blend.</li><br><br>
+    <li><b>screen:</b>The background layers are inverted, multiplied, and then inverted again, resulting in a lighter blend.</li><br><br>
+    <li><b>overlay:</b>Combines multiply and screen modes, darkening some areas and lightening others, creating a contrast.</li><br><br>
+    <li><b>darken:</b>Keeps the darker colors between the layers.</li><br><br>
+    <li><b>lighten:</b>Keeps the lighter colors between the layers.</li><br><br>
+    <li><b>color-dodge:</b>Brightens the background layers, emphasizing the brighter areas.</li><br><br>
+    <li><b>color-burn:</b>Darkens the background layers, increasing the contrast between them.</li><br><br>
+    <li><b>hard-light:</b>Uses multiply or screen depending on the base color.</li><br><br>
+    <li><b>soft-light:</b>Darkens or lightens the colors, depending on the top layer.</li><br><br>
+    <li><b>difference:</b>Subtracts the top layer from the bottom or vice versa, depending on which is lighter.</li><br><br>
+    <li><b>exclusion:</b>Similar to difference but with lower contrast.</li><br><br>
+    <li><b>hue: </b>Preserves the hue of the top layer while using the luminosity and saturation of the bottom layers.</li><br><br>
+    <li><b>saturation:</b>Preserves the saturation of the top layer.</li><br><br>
+    <li><b>color:</b>Preserves the hue and saturation of the top layer and applies the luminosity of the bottom layers.</li><br><br>
+    <li><b>luminosity:</b>Preserves the luminosity of the top layer while using the hue and saturation of the bottom.</li><br>
+    <h2>Text and Font properties</h2>
+    <img src="./IMAGE/font-style.png" height="300px" width=450px"">
+    <p>CSS offers a variety of properties to style text and fonts, including changing the appearance of font size, style, weight, spacing, and more.</p>
+    <b>Font Styling Properties</b><br><br>
+    <li><ins>font-family:</ins>Specifies the font to be used for the text. You can list multiple fonts as a fallback system in case the first font is not available.</li><br>
+    <li><ins>font-size:</ins>Sets the size of the font. You can use values like pixels (px), em units, percentages, etc.</li><br>
+    <li><ins>font-weight:</ins>Specifies the thickness or boldness of the font.</li><br>
+    <li><ins>font-style:</ins>Defines whether the font is normal, italic, or oblique.</li><br>
+    <li><ins>font-variant</ins>This property enables text transformations like small-caps, which displays lowercase letters as small uppercase letters.</li><br>
+    <li><ins>line-height:</ins>Defines the space between lines of text. It is commonly used for controlling readability and vertical spacing.</li><br>
+    <li><ins>letter-spacing:</ins>Adjusts the space between characters.</li><br>
+    <li><ins>word-spacing:</ins>Adjusts the space between words.</li><br>
+    <li><ins>text-transform</ins>Controls the capitalization of text.</li><br>
+    <b>Text Styling Properties</b><br><br>
+    <li><ins>color:</ins>Sets the color of the text.</li><br>
+    <li><ins>text-align:</ins>Aligns the text horizontally (left, right, center, or justify).</li><br>
+    <li><ins>text-decoration:</ins>Specifies decoration added to text, such as underlining, overlining, or striking through.</li><br>
+    <li><ins>text-shadow:</ins>Adds shadow to the text for a more dramatic effect.</li><br>
+    <li><ins>text-indent:</ins>Indents the first line of text inside an element.</li><br>
+    <li><ins>text-overflow:</ins>Handles text that overflows a container (used in combination with white-space and overflow properties).</li><br>
+    <li><ins>white-space:</ins>Controls how whitespace is handled inside an element.</li>
+    <h2>Border and Outline Properties</h2>
+    <img src="./IMAGE/border11.png" height="400px" width="550px">
+    <p>A CSS border is a line that surrounds an HTML element, providing a visual separation between the element and its surroundings. Borders can be styled in various ways, including adjusting their width, color, and style. The basic properties used to define borders in CSS are border-width, border-style, and border-color. This Borders in CSS article will teach us about CSS borders, covering styling options, practical use cases, and best practices.</p>
+    <b>1.Border Shorthand Property</b>
+    <p>The border shorthand property allows you to set the border width, style, and color in a single declaration.</p>
+    <b>2.Individual Border Properties</b><br><br>
+    <li><ins>border-width:</ins>Defines the thickness of the border.</li><br>
+    <li><ins>border-style:</ins>Specifies the type of the border (solid, dashed, dotted, etc.).</li><br>
+    <li><ins>border-color:</ins>Sets the color of the border.</li><br>
+    <b>3.Border on Specific Sides</b>
+    <p>You can target specific sides (top, right, bottom, or left) individually using these properties:</p>
+    <li><ins>border-top</ins></li>
+    <li><ins>border-right</ins></li>
+    <li><ins>border-bottom</ins></li>
+    <li><ins>border-bottom</ins></li><br>
+    <b>4. Border Radius (Rounded Corners)</b><br><br>
+    <li><ins>border-radius</ins>This property is used to round the corners of an element's border.</li><br>
+    <b>5. Border-Style Options</b><br>,br>
+    <li><ins>solid:</ins>A solid, continuous line.</li>
+    <li><ins>dotted:</ins>A dotted border</li>
+    <li><ins>dashed:</ins>A dashed line.</li>
+    <li><ins>double:</ins>Two solid lines.</li>
+    <li><ins>groove:</ins>A carved effect.</li>
+    <li><ins>ridge:</ins>A raised effect.</li>
+    <li><ins>inset:</ins>Appears as if the element is embedded.</li>
+    <li><ins>outset:</ins>Appears as if the element is raised.</li><br>
+    <b>6. Transparent Borders</b><br><br>
+    <li>You can create transparent borders by using the transparent color.</li><br>
+    <b>7. Shorthand for Individual Borders</b><br><br>
+    <li>You can also use shorthand for each side individually.</li>
+
+
+
+    <br>
+    <div class="w4">
+        <pre> <a href="https://www.facebook.com/"><img src="./IMAGE/facebook.png" height="30px" width="35px"></a>    <a href="https://www.instagram.com/"><img src="./IMAGE/instagram.png" height="30px" width="35px"></a>    <a href="https://x.com/?lang=en"><img src="./IMAGE/twitter.png" height="30px" width="35px"></a>    <a href="https://mail.google.com/mail/u/0/#inbox"><img src="./IMAGE/gmail.png" height="30px" width="35px"></a>    <a href="https://www.youtube.com/"><img src="./IMAGE/youtube.png" height="30px" width="35px"></a>    </pre>
+        <pre><a href="./home.html">Home</a>   <a href="./news.html">News</a>   <a href="./about1.html">About</a>   <a href="./contactus.html">Contact Us</a>   <a href="./ourteam.html">Our Team</a></pre>
+       <br>
+       <p style="text-align: center; color: white;">Designed by Yash Gurav</p> 
+        </div>
+    </body>
+    </body>
+</html>
